@@ -10,6 +10,17 @@ public class Stack {
 	public void push(Integer data) {
 		linkedList.addFirst(data);
 	}
+	
+	public void peak() {
+		System.out.println("\n" + linkedList.peek());
+	}
+	
+	
+	public void pop() {
+		while(linkedList.size() != 0) {
+			linkedList.pop();
+		}
+	}
 
 	
 	public void printStack() {
@@ -25,6 +36,9 @@ public class Stack {
 		stack.push(70); 
 		stack.push(30); 
 		stack.push(56);
+		stack.printStack();
+		stack.peak();                 
+		stack.pop();              
 		stack.printStack();
 
 }
